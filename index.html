@@ -6,13 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>MINIMO</title>
     <link rel="stylesheet" type="text/css" href="css/style.css" >
+    <script src="js/jquery-3.4.1.min.js"></script>
 </head>
     <body class="page">
         <header class="header">
             <div class="container">
                 <div class="header__row">
                     <div class="logo">Minim<span class="logo__letter">o</span></div>
-                    <div class="menu">
+                    <div class="menu menu_mobile">
                         <ul class="menu__list">
                             <li class="menu__item">
                                 <a class="menu__link" href="#">Lifestyle</a>
@@ -28,6 +29,11 @@
                             </li>
                         </ul>
                     </div>
+                    <div class="burger-btn burger-btn_close js-burger-btn">
+                        <span class="burger-btn__line burger-btn__line_top"></span>
+                        <span class="burger-btn__line burger-btn__line_middle"></span>
+                        <span class="burger-btn__line burger-btn__line_bottom"></span>
+                    </div>
                 </div>
             </div>
         </header>
@@ -35,7 +41,7 @@
             <div class="section">
                 <div class="container">
                     <div class="banner">
-                        <img src="imgs/main_banner.jpg" alt="">
+                        <img src="imgs/main_banner.jpg" class="banner__img" alt="">
                     </div>                
                 </div>
             </div>
@@ -188,12 +194,11 @@
                                 </div>
                             </div>
                         </div>
-
-                        <div class="articles__btn-more">
-                            <a href="#" class="articles__link-more">
-                                Load more
-                            </a>
-                        </div>
+                    </div>
+                    <div class="articles-btn-more">
+                        <a href="#" class="articles-btn-more__link-more">
+                            Load more
+                        </a>
                     </div>
                 </div>
             </div>
@@ -280,6 +285,8 @@
                     </div>
                 </div>
             </div>
+
+            <script src="js/main.js"></script>
         </footer>
     </body>
 </html>
